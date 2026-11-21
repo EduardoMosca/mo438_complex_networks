@@ -1,0 +1,129 @@
+{
+  "instante_s": 1.0,
+  "vertices": 112878,
+  "arestas": 4045599,
+  "n_bs": 108453,
+  "n_sat": 4425,
+  "arestas_por_tipo": {
+    "terrestre": 398053,
+    "ISL": 8296,
+    "GSL": 3639250
+  },
+  "grau_medio": 71.68091213522564,
+  "grau_medio_bs": 40.896572708915386,
+  "grau_medio_sat": 826.1789830508475,
+  "grau_max": 24165,
+  "grau_max_bs": 86,
+  "grau_max_sat": 24165,
+  "isolados": 0,
+  "transitividade": 0.00241068848684798,
+  "clust_medio": 0.36337872635759505,
+  "clust_medio_grau2": 0.36337872635759505,
+  "clust_medio_bs": 0.3766787929121543,
+  "clust_medio_sat": 0.037405366348190465,
+  "densidade": 0.000635035588607295,
+  "componentes": 1,
+  "maior_componente": 112878,
+  "tamanhos_componentes_top10": [
+    112878
+  ],
+  "diametro": 26,
+  "distancia_media": 7.220049884170625,
+  "distancia_media_ic95": 0.0,
+  "distancia_exata": true,
+  "fontes_bfs": 112878,
+  "bs_sem_satelite_visivel": 0,
+  "altitude_min_isl_km": 701.3246493967148,
+  "diagnostico": {
+    "instantes": 999,
+    "satelites": 4425,
+    "t_ini_s": 1.0,
+    "t_fim_s": 999.0,
+    "raio_orbital_mediano_km": 7521.0059092254405,
+    "rotacao_planos_graus_h": 15.000028265610768,
+    "residuo_planaridade": 3.459616686734217e-07,
+    "referencial": "rotação da Terra com sinal invertido",
+    "correcao_graus_h": -30.041096998059476
+  },
+  "camadas": [
+    {
+      "altitude_km": 1110.000050004852,
+      "inclinacao_graus": 53.80000412811511,
+      "planos": 32,
+      "sats_por_plano": [
+        50,
+        50
+      ],
+      "satelites": 1600,
+      "fator_velocidade": 1.1742318981042796
+    },
+    {
+      "altitude_km": 1130.000165948782,
+      "inclinacao_graus": 74.00000442072883,
+      "planos": 8,
+      "sats_por_plano": [
+        50,
+        50
+      ],
+      "satelites": 400,
+      "fator_velocidade": 1.1772298978771187
+    },
+    {
+      "altitude_km": 1150.000305829065,
+      "inclinacao_graus": 52.99999632927471,
+      "planos": 32,
+      "sats_por_plano": [
+        50,
+        50
+      ],
+      "satelites": 1600,
+      "fator_velocidade": 1.1804839358043266
+    },
+    {
+      "altitude_km": 1275.0003745592246,
+      "inclinacao_graus": 81.00000237151666,
+      "planos": 5,
+      "sats_por_plano": [
+        75,
+        75
+      ],
+      "satelites": 375,
+      "fator_velocidade": 1.2001386098232312
+    },
+    {
+      "altitude_km": 1325.0000281576645,
+      "inclinacao_graus": 70.00000633633375,
+      "planos": 6,
+      "sats_por_plano": [
+        75,
+        75
+      ],
+      "satelites": 450,
+      "fator_velocidade": 1.2080178345534633
+    }
+  ],
+  "radios_no_arquivo": {
+    "GSM": 60495,
+    "UMTS": 36250,
+    "LTE": 10777,
+    "NR": 931
+  },
+  "linhas_bs": 108453,
+  "operadoras": 244,
+  "paises_mcc": 90,
+  "config": {
+    "log": "os.log",
+    "bs": "base_stations.csv",
+    "radio": null,
+    "terrestre": "knn",
+    "k_vizinhos": 6,
+    "raio_terrestre_km": 50.0,
+    "isl": "grade",
+    "isl_max_km": 5000.0,
+    "altitude_rasante_km": 80.0,
+    "elevacao_min_graus": 40.0,
+    "max_sat_por_bs": 0,
+    "corrigir_referencial": true,
+    "threads": 28
+  }
+}

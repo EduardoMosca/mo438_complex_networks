@@ -1,0 +1,5 @@
+numpy
+pandas
+scipy
+matplotlib
+networkit    # só para o analise_parcial.py

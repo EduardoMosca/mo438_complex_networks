@@ -1,0 +1,35 @@
+REDE INTACTA (t = 1 s): 112,878 vértices, 4,045,599 arestas; carga estimada com 256 estações de origem
+  latência média entre estações 36.68 ms em 26.0 saltos; <l> ~ 7.119; Gini da carga dos satélites 0.902; maior carga 12.02% dos pares; 1,022 satélites sem carga
+  satélite de maior carga: 1645 (camada 1110 km, plano 8, lat 40.8, lon -50.83, grau 4)
+HUBS (falha de um vértice):
+  satelite de maior grau: maior aumento de carga 1.1% da maior carga inicial; carga redistribuída 0.18% da carga dos satélites; latência 36.68 -> 36.68 ms; 0 satélites com +50% de carga; 0 estações sem satélite visível
+  satelite de maior carga: maior aumento de carga 90.9% da maior carga inicial; carga redistribuída 16.37% da carga dos satélites; latência 36.68 -> 36.71 ms; 99 satélites com +50% de carga; 0 estações sem satélite visível
+  estacao de maior grau: maior aumento de carga 0.0% da maior carga inicial; carga redistribuída 0.00% da carga dos satélites; latência 36.68 -> 36.68 ms; 0 satélites com +50% de carga; 0 estações sem satélite visível
+  estacao de maior carga: maior aumento de carga 0.0% da maior carga inicial; carga redistribuída 0.00% da carga dos satélites; latência 36.68 -> 36.68 ms; 0 satélites com +50% de carga; 0 estações sem satélite visível
+ATAQUE (fração f de vértices removidos; S = maior componente):
+  por grau: S < 0,5 a partir de f = 0.01
+  por carga: S < 0,5 a partir de f = 0.2
+  aleatória: S >= 0,5 até f = 0.3 (S = 0.699)
+CAMADA SATELITAL (fração q dos satélites removidos):
+  maior carga: q=0.01: atendida 1.000, lat. 36.8 ms, 0 sem satélite; q=0.02: atendida 1.000, lat. 37.1 ms, 0 sem satélite; q=0.05: atendida 1.000, lat. 37.3 ms, 0 sem satélite; q=0.1: atendida 1.000, lat. 37.6 ms, 0 sem satélite; q=0.2: atendida 1.000, lat. 40.7 ms, 0 sem satélite; q=0.3: atendida 0.999, lat. 50.4 ms, 91 sem satélite; q=0.5: atendida 0.375, lat. 56.5 ms, 42,314 sem satélite
+  maior grau: q=0.01: atendida 1.000, lat. 37.3 ms, 0 sem satélite; q=0.02: atendida 0.999, lat. 38.2 ms, 15,334 sem satélite; q=0.05: atendida 0.869, lat. 41.2 ms, 36,466 sem satélite; q=0.1: atendida 0.558, lat. 49.7 ms, 71,284 sem satélite; q=0.2: atendida 0.088, lat. 37.6 ms, 98,378 sem satélite; q=0.3: atendida 0.029, lat. 1.5 ms, 107,698 sem satélite; q=0.5: atendida 0.029, lat. 0.8 ms, 108,440 sem satélite
+  aleatória: q=0.01: atendida 1.000, lat. 36.7 ms, 0 sem satélite; q=0.02: atendida 1.000, lat. 36.8 ms, 0 sem satélite; q=0.05: atendida 1.000, lat. 36.9 ms, 0 sem satélite; q=0.1: atendida 1.000, lat. 37.4 ms, 0 sem satélite; q=0.2: atendida 1.000, lat. 38.4 ms, 0 sem satélite; q=0.3: atendida 1.000, lat. 39.8 ms, 0 sem satélite; q=0.5: atendida 1.000, lat. 46.1 ms, 0 sem satélite
+PLANOS: pior plano 8 (1110 km, 53.8 graus): aumento máximo 92.3% da maior carga inicial, carga redistribuída 22.3% da carga dos satélites, latência 36.68 -> 36.72 ms; mediana dos planos 6.8%; máximo de estações sem satélite visível 0
+REGIONAL (falha regional x mesmo número de estações ao acaso):
+  centro 0 (9.84, -83.86) R=50 km: 11,395 estações; Δlatência +0.01% (acaso +0.13%); carga redistribuída 0.074% da carga dos satélites (acaso 2.524%)
+  centro 0 (9.84, -83.86) R=250 km: 18,503 estações; Δlatência +0.00% (acaso +0.26%); carga redistribuída 0.007% da carga dos satélites (acaso 3.697%)
+  centro 0 (9.84, -83.86) R=1000 km: 20,780 estações; Δlatência +0.00% (acaso +0.28%); carga redistribuída 0.017% da carga dos satélites (acaso 3.483%)
+  centro 1 (-0.47, 35.98) R=50 km: 1,079 estações; Δlatência +0.03% (acaso +0.00%); carga redistribuída 0.516% da carga dos satélites (acaso 0.235%)
+  centro 1 (-0.47, 35.98) R=250 km: 15,666 estações; Δlatência +0.00% (acaso +0.19%); carga redistribuída 0.023% da carga dos satélites (acaso 3.374%)
+  centro 1 (-0.47, 35.98) R=1000 km: 23,366 estações; Δlatência +0.00% (acaso +0.36%); carga redistribuída 0.048% da carga dos satélites (acaso 4.416%)
+  centro 2 (47.58, 14.26) R=50 km: 463 estações; Δlatência +0.00% (acaso +0.00%); carga redistribuída 0.022% da carga dos satélites (acaso 0.332%)
+  centro 2 (47.58, 14.26) R=250 km: 5,512 estações; Δlatência +0.00% (acaso +0.05%); carga redistribuída 0.004% da carga dos satélites (acaso 1.235%)
+  centro 2 (47.58, 14.26) R=1000 km: 17,031 estações; Δlatência +0.00% (acaso +0.22%); carga redistribuída 0.053% da carga dos satélites (acaso 3.721%)
+CASCATA (satélites que falharam além do gatilho):
+  satelite de maior carga, capacidade proporcional: alfa=0.1: 2145, alfa=0.25: 2226, alfa=0.5: 2278, alfa=1: 2250, alfa=2: 2296, alfa=5: 9, alfa=10: 7, alfa=20: 0, alfa=50: 0
+  satelite de maior carga, capacidade uniforme: alfa=0.1: 7, alfa=0.25: 0, alfa=0.5: 0, alfa=1: 0, alfa=2: 0, alfa=5: 0, alfa=10: 0, alfa=20: 0, alfa=50: 0
+  plano do satelite de maior carga (plano 8), capacidade proporcional: alfa=0.1: 2071, alfa=0.25: 2162, alfa=0.5: 1977, alfa=1: 2152, alfa=2: 2192, alfa=5: 9, alfa=10: 7, alfa=20: 0, alfa=50: 0
+  plano do satelite de maior carga (plano 8), capacidade uniforme: alfa=0.1: 7, alfa=0.25: 0, alfa=0.5: 0, alfa=1: 0, alfa=2: 0, alfa=5: 0, alfa=10: 0, alfa=20: 0, alfa=50: 0
+  regional 1000 km (centro 0), capacidade proporcional: alfa=0.1: 0, alfa=0.25: 0, alfa=0.5: 0, alfa=1: 0, alfa=2: 0, alfa=5: 0, alfa=10: 0, alfa=20: 0, alfa=50: 0
+  regional 1000 km (centro 0), capacidade uniforme: alfa=0.1: 0, alfa=0.25: 0, alfa=0.5: 0, alfa=1: 0, alfa=2: 0, alfa=5: 0, alfa=10: 0, alfa=20: 0, alfa=50: 0
+TEMPO (10 instantes): Gini 0.904 ± 0.002; maior carga 14.52% ± 1.64%; latência 36.76 ± 0.04 ms

@@ -1,0 +1,24 @@
+# ambiente virtual e cache do Python
+.env/
+.venv/
+__pycache__/
+*.pyc
+
+# traço do ns-3-leo: grande demais para o GitHub (ver README)
+os.log
+os.log.*
+
+# logs de execução (para versionar um, coloque-o em logs/)
+*.log
+nohup.out
+!logs/*.log
+
+# saídas grandes ou que se refazem a partir do código
+meus_snapshots*/
+snapshots/
+grafos_gerados/
+grafos_novos/
+*.pkl
+*.pkl.zst
+*.tar
+*.tar.gz

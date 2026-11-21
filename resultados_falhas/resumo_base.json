@@ -1,0 +1,145 @@
+{
+  "instante_s": 1.0,
+  "vertices": 112878,
+  "estacoes": 108453,
+  "satelites": 4425,
+  "arestas": 4045599,
+  "arestas_por_tipo": {
+    "terrestre": 398053,
+    "ISL": 8296,
+    "GSL": 3639250
+  },
+  "fontes_carga": 256,
+  "fontes_bfs": 64,
+  "centros_regionais": [
+    [
+      9.839,
+      -83.862
+    ],
+    [
+      -0.47,
+      35.98
+    ],
+    [
+      47.577,
+      14.258
+    ]
+  ],
+  "medidas": {
+    "n_removidos": 0,
+    "estacoes_removidas": 0,
+    "satelites_removidos": 0,
+    "S": 1.0,
+    "S_vivos": 1.0,
+    "componentes": 1,
+    "estacoes_sem_satelite_visivel": 0,
+    "estacoes_sem_acesso_satelital": 0,
+    "pares_conectados": 1.0,
+    "pares_conectados_orig": 1.0,
+    "ell": 7.119104340343914,
+    "demanda_atendida": 1.0,
+    "demanda_atendida_orig": 1.0,
+    "latencia_ms": 36.68253810054158,
+    "saltos": 26.01542934892856,
+    "carga_max_sat": 0.12017398826208829,
+    "gini_sat": 0.9023219576446919,
+    "carga_total_sat": 10.344174727068195
+  },
+  "satelites_maior_carga": [
+    {
+      "satelite": 1645,
+      "camada_km": 1110,
+      "plano": 8,
+      "lat": 40.8,
+      "lon": -50.83,
+      "grau": 4,
+      "carga": 0.12017398826208829
+    },
+    {
+      "satelite": 1646,
+      "camada_km": 1110,
+      "plano": 8,
+      "lat": 45.04,
+      "lon": -42.87,
+      "grau": 4,
+      "carga": 0.11988191636622653
+    },
+    {
+      "satelite": 1642,
+      "camada_km": 1110,
+      "plano": 8,
+      "lat": 25.67,
+      "lon": -69.41,
+      "grau": 1728,
+      "carga": 0.11974619964362114
+    },
+    {
+      "satelite": 1643,
+      "camada_km": 1110,
+      "plano": 8,
+      "lat": 31.0,
+      "lon": -63.91,
+      "grau": 4,
+      "carga": 0.1194926672629366
+    },
+    {
+      "satelite": 1644,
+      "camada_km": 1110,
+      "plano": 8,
+      "lat": 36.08,
+      "lon": -57.78,
+      "grau": 4,
+      "carga": 0.11932435403450374
+    },
+    {
+      "satelite": 1640,
+      "camada_km": 1110,
+      "plano": 8,
+      "lat": 14.49,
+      "lon": -79.1,
+      "grau": 19693,
+      "carga": 0.11604561378536127
+    },
+    {
+      "satelite": 1641,
+      "camada_km": 1110,
+      "plano": 8,
+      "lat": 20.15,
+      "lon": -74.43,
+      "grau": 1735,
+      "carga": 0.11597523414736473
+    },
+    {
+      "satelite": 1647,
+      "camada_km": 1110,
+      "plano": 8,
+      "lat": 48.65,
+      "lon": -33.75,
+      "grau": 4,
+      "carga": 0.10928257720005163
+    },
+    {
+      "satelite": 1648,
+      "camada_km": 1110,
+      "plano": 8,
+      "lat": 51.43,
+      "lon": -23.4,
+      "grau": 4,
+      "carga": 0.1064461769377236
+    },
+    {
+      "satelite": 2962,
+      "camada_km": 1110,
+      "plano": 3,
+      "lat": 2.85,
+      "lon": 31.66,
+      "grau": 19489,
+      "carga": 0.09777972052152104
+    }
+  ],
+  "satelites_sem_carga": 1022,
+  "estacao_maior_carga": {
+    "indice": 41719,
+    "carga": 0.01632047616687567
+  }
+}

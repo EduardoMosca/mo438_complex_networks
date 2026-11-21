@@ -1,0 +1,48 @@
+% Gerado por analise_parcial.py - não edite à mão (rode a análise de novo)
+\newif\ifVariasComponentes\VariasComponentesfalse
+\newcommand{\InstanteT}{1}
+\newcommand{\NumInstantes}{999}
+\newcommand{\PassoTraco}{1}
+\newcommand{\TIniTraco}{1}
+\newcommand{\TFimTraco}{999}
+\newcommand{\NumSat}{4.425}
+\newcommand{\DescricaoCamadas}{1.110\,km/53,8$^\circ$ (32$\times$50), 1.130\,km/74,0$^\circ$ (8$\times$50), 1.150\,km/53,0$^\circ$ (32$\times$50), 1.275\,km/81,0$^\circ$ (5$\times$75) e 1.325\,km/70,0$^\circ$ (6$\times$75)}
+\newcommand{\TextoReferencial}{os planos orbitais giram para leste a 15,00$^\circ$/h em relação ao referencial das estações em solo, quando deveriam regredir para oeste a 15,04$^\circ$/h por causa da rotação da Terra. Isso é consistente com a implementação do modelo, que soma $+2\pi t/24\,\mathrm{h}$ à longitude de cada plano. Corrigimos o traço girando as posições a 30,04$^\circ$/h para oeste em torno do eixo polar, o que o leva a um referencial fixo à Terra (ECEF) coincidente com o do ns-3 em $t=0$}
+\newcommand{\TextoVelocidade}{Além disso, o avanço angular no traço é 1,17--1,21 vezes o kepleriano (o modelo usa o raio da Terra, e não o da órbita, para converter velocidade em ângulo): cada instante é uma configuração válida da constelação, mas a escala de tempo da evolução fica comprimida, o que será considerado na análise temporal.}
+\newcommand{\LinhasBS}{108.453}
+\newcommand{\FiltroRadio}{todas as tecnologias}
+\newcommand{\NumBS}{108.453}
+\newcommand{\NumOperadoras}{244}
+\newcommand{\TextoFiltroBS}{Usamos todas as células do arquivo (GSM 60.495, UMTS 36.250, LTE 10.777 e NR 931), 108.453 ao todo, de 244 operadoras em 90 países (códigos MCC), e tratamos todas como estações-base 5G NR: a infraestrutura celular existente serve de aproximação para as posições de uma rede NR. Cada vértice terrestre é uma célula; células de um mesmo sítio, de setores ou tecnologias diferentes, não foram agregadas.}
+\newcommand{\NumPaises}{90}
+\newcommand{\TextoTerrestre}{cada estação liga-se às 6 estações mais próximas da mesma operadora (mesmos MCC e MNC), desde que estejam a até 50\,km --- um substituto esparso para a rede de transporte (\emph{backhaul}); ligar todos os pares a 50\,km, como na proposta, formava cliques de milhares de vértices nas metrópoles}
+\newcommand{\TextoISL}{topologia \emph{+Grid} \cite{hypatia}: cada satélite liga-se aos dois vizinhos do próprio plano e ao satélite correspondente de cada plano adjacente da mesma camada (planos identificados a partir das trajetórias)}
+\newcommand{\TextoMaxSat}{cada estação liga-se a todos os satélites visíveis}
+\newcommand{\ISLMaxKm}{5.000}
+\newcommand{\AltitudeRasante}{80}
+\newcommand{\ElevacaoMin}{40}
+\newcommand{\TextoVisada}{Nas altitudes desta constelação, o alcance é a restrição ativa: o ISL mais baixo do instante analisado passa a 701\,km de altitude.}
+\newcommand{\NumVertices}{112.878}
+\newcommand{\NumArestas}{4.045.599}
+\newcommand{\ArestasTerr}{398.053}
+\newcommand{\ArestasISL}{8.296}
+\newcommand{\ArestasGSL}{3.639.250}
+\newcommand{\GrauMedio}{71,68}
+\newcommand{\GrauMedioBS}{40,90}
+\newcommand{\GrauMedioSat}{826,18}
+\newcommand{\GrauMax}{24.165}
+\newcommand{\GrauMaxBS}{86}
+\newcommand{\GrauMaxSat}{24.165}
+\newcommand{\Transitividade}{0,0024}
+\newcommand{\ClustMedio}{0,3634}
+\newcommand{\ClustMedioGrauDois}{0,3634}
+\newcommand{\ClustMedioBS}{0,3767}
+\newcommand{\ClustMedioSat}{0,0374}
+\newcommand{\DistMedia}{7,220}
+\newcommand{\NotaDist}{exata}
+\newcommand{\Diametro}{26}
+\newcommand{\Densidade}{$6{,}35\times 10^{-4}$}
+\newcommand{\NumComponentes}{1}
+\newcommand{\TamMaiorComp}{112.878}
+\newcommand{\FracMaiorComp}{100,00\%}
+\newcommand{\TextoResultados}{No instante analisado, as arestas GSL são 90,0\% do total. Os graus das duas camadas ocupam faixas distintas (Figura~\ref{fig:dist}a): estações-base têm grau médio 40,9 (máximo 86), enquanto satélites têm grau médio 826,2 (máximo 24.165), pois cada satélite agrega as estações que o veem acima de 40$^\circ$. A transitividade (0,0024) é bem menor que a clusterização local média (0,3634): os satélites, de grau muito alto, concentram tríades abertas (pares de estações distantes que veem o mesmo satélite) e pesam mais no cálculo global, enquanto as estações, ligadas a vizinhas próximas que veem os mesmos satélites, têm $C_i$ médio 0,38 contra 0,04 dos satélites. A rede é conexa: os enlaces GSL ligam todas as estações-base à camada satelital, de modo que a distribuição de tamanhos das componentes (item 9) não se aplica.}
